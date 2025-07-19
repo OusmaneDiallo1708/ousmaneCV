@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <style>
+    .imges{
+      width: 15vh;
+    }
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: #1a202c; /* bg-gray-900 */
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .nav a:hover {
+    color: #d1d5db; /* hover:text-gray-300 */
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Responsive pour mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      background-color: #1a202c;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 25vh;
+      padding: 10px 0;
+    }
+
+    .nav.show {
+      display: flex;
+    }
+
+    .nav a {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+      
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Diallo Ousmane</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-700">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Diallo Ousmane</h1>
+  
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+  
+      <nav class="nav" id="nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  
+  <!-- Hero section -->
+  <section class="bg-white text-gray-400e py-20 px-10 text-center">
+    <img class="w-48 h-48 rounded-full mx-auto" src="./image/MonLogo.jpg" alt="" srcset="">
+    <h2 class="text-4xl font-bold mb-4">Développeur Web Fullstack</h2>
+    <p class="text-xl">Spécialisé en NodeJS, Tailwind CSS, JavaScript & React</p>
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="flex items-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto justify-between">
+        <img class="w-48 h-48 rounded-full mx-auto m-8" src="./image/Screenshot_20250701_003131_Gallery.jpg" alt="" srcset="">
+      <div class="">
+        <h3 class="text-4xl font-bold mb-4 text-center py-3 ">À propos de moi</h3>
+      <p class="text-2xl md:text-sm">Je suis un développeur passionné par le web, avec une  solide expérience <br> en backend (Laravel, MySQL) et en frontend (Tailwind, React, JavaScript). <br> J'aime transformer les idées en applications modernes et performantes.</p>
+      </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="bg-whiteitems-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto ">
+      <div class="max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold mb-4 text-center py-3">Compétences</h3>
+      <div class="grid grid-cols-5 md:grid-cols-4 m-4 gap-4 ">
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase  ">
+          <img class="imges" src="./image/html.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/css.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Boostrap1.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Tailwind.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/JS.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/React.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/NodeJS.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Larave1.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/MySQL.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/SQL-Serveur.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Photosp.jpg" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Figma.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Canva.png" alt="Mes competances" srcset="">
+        </div>
+        <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase">
+          <img class="imges" src="./image/Filmora.png" alt="Mes competances" srcset="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="bg-whiteitems-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto">
+    <h3 class="text-4xl font-bold mb-4 text-center py-3">Mes projets</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <h4 class="text-2xl font-semibold text-center">Gestion École</h4>
+        <p class="text-sm text-gray-600">Application complète de gestion scolaire en Laravel & MySQL</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <h4 class="text-2xl font-semibold text-center">Site Portfolio</h4>
+        <p class="text-sm text-gray-600">Portfolio personnel en HTML + Tailwind CSS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white shadow-md py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Contact</h3>
+      <p>Email : <a href="mailto:6669580ousmanediallo@gmail.com" class="underline">6669580ousmanediallo@gmail.com</a></p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    &copy; 2025 Diallo Ousmane. Tous droits réservés.
+  </footer>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+  
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  </script>  
+</body>
+</html>
