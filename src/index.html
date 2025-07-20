@@ -94,7 +94,7 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">Diallo Ousmane</h1>
+      <h1 class="logo uppercase">Diallo Ousmane</h1>
   
       <button class="menu-toggle" id="menu-toggle">☰</button>
   
@@ -111,22 +111,28 @@
     <img class="w-48 h-48 rounded-full mx-auto" src="./image/MonLogo.jpg" alt="" srcset="">
     <h2 class="text-4xl font-bold mb-4">Développeur Web Fullstack</h2>
     <p class="text-xl">Spécialisé en NodeJS, Tailwind CSS, JavaScript & React</p>
+    <div class="m-4 flex justify-center">
+      <ul class=" grid grid-cols-1 flex-col md:flex-row  ">
+        <!-- <a href="#about" class="text-2xl m-3 bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded">Découvrez mon travai</a> -->
+        <a href="./mon_cv/OusmaneDialloCV.pdf" download class="text-2xl m-3 bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded">Télécharger Mon CV</a>
+      </ul>
+    </div>
   </section>
 
   <!-- À propos -->
-  <section id="about" class="flex items-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto justify-between">
+  <section id="about" class="flex flex-col md:flex-row items-center h-full gap-8 py-5 m-4 max-w-6xl  bg-white rounded-xl shadow-md mx-auto justify-between">
         <img class="w-48 h-48 rounded-full mx-auto m-8" src="./image/Screenshot_20250701_003131_Gallery.jpg" alt="" srcset="">
       <div class="">
         <h3 class="text-4xl font-bold mb-4 text-center py-3 ">À propos de moi</h3>
-      <p class="text-2xl md:text-sm">Je suis un développeur passionné par le web, avec une  solide expérience <br> en backend (Laravel, MySQL) et en frontend (Tailwind, React, JavaScript). <br> J'aime transformer les idées en applications modernes et performantes.</p>
+      <p class="text-2xl ">Je suis un développeur passionné par le web, avec une  solide expérience <br> en backend (Laravel, MySQL) et en frontend (Tailwind, React, JavaScript). <br> J'aime transformer les idées en applications modernes et performantes.</p>
       </div>
   </section>
 
   <!-- Compétences -->
-  <section id="skills" class="bg-whiteitems-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto ">
+  <section id="skills" class="bg-whiteitems-stretch h-full gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto ">
       <div class="max-w-4xl mx-auto">
       <h3 class="text-4xl font-bold mb-4 text-center py-3">Compétences</h3>
-      <div class="grid grid-cols-5 md:grid-cols-4 m-4 gap-4 ">
+      <div class="grid grid-cols-5 md:grid-cols-5 m-4 gap-4 ">
         <div class="bg-blue-100 flex justify-center items-center text-2xl rounded shadow uppercase  ">
           <img class="imges" src="./image/html.png" alt="Mes competances" srcset="">
         </div>
@@ -174,7 +180,7 @@
   </section>
 
   <!-- Projets -->
-  <section id="projects" class="bg-whiteitems-stretch h-[600px] gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto">
+  <section id="projects" class="bg-whiteitems-stretch h-full gap-8 py-5 px-4 m-3 max-w-6xl  bg-white rounded-xl shadow-md mx-auto">
     <h3 class="text-4xl font-bold mb-4 text-center py-3">Mes projets</h3>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="bg-white rounded-lg shadow p-4 text-center">
@@ -189,7 +195,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-white shadow-md py-12 px-4">
+  <section id="contact" class="bg-white h-full shadow-md py-12 px-4">
     <div class="max-w-3xl mx-auto text-center">
       <h3 class="text-3xl font-bold mb-4">Contact</h3>
       <p>Email : <a href="mailto:6669580ousmanediallo@gmail.com" class="underline">6669580ousmanediallo@gmail.com</a></p>
@@ -202,7 +208,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4">
+  <footer class="bg-gray-800 h-full text-white text-center p-4">
     &copy; 2025 Diallo Ousmane. Tous droits réservés.
   </footer>
   <script>
